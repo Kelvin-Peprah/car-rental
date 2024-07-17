@@ -147,8 +147,7 @@ textarea:focus {
 #section-3 {
   position: relative;
   height: 250px;
-  padding: 200px;
-  margin: 0 20px 20px;
+  margin: 0 20px 50px 20px;
 }
 #section-3 iframe {
   position: absolute;
