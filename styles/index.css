@@ -350,11 +350,12 @@
 .containers-5 {
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 
 .containers-5-box {
   width: 450px;
+  height: 450px;
   background: linear-gradient(90deg, #05092a 17%, white 10%);
   padding: 50px 50px 30px 30px;
   gap: 20px;
@@ -388,5 +389,11 @@
 .containers-5-detail {
   font: 14px 'roboto';
   text-align: justify;
-  line-height: 35px;
+  line-height: 25px;
+}
+
+.container-5-inner-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
