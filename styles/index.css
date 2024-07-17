@@ -1,0 +1,392 @@
+#section-1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('/images/cars/toyota-rav4.webp') center center / contain
+    no-repeat scroll;
+}
+
+#section-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #05092a7d; /* Overlay color */
+  z-index: 1;
+}
+
+#section-1 > * {
+  position: relative;
+  z-index: 2;
+}
+
+/*media query*/
+
+@media (max-width: 750px) {
+  #section-1 {
+    max-height: 100vh;
+  }
+}
+
+#section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px 50px 20px;
+}
+
+.section-2-span,
+.section-3-div,
+.section-4-title,
+.containers-5 {
+  text-align: center;
+  font: 700 29px 'Libre Baskerville';
+  padding-bottom: 20px;
+}
+
+.sec-2-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/*media queries*/
+@media (max-width: 750px) {
+  .sec-2-main-container {
+    flex-direction: column;
+  }
+}
+
+.section-2-container {
+  max-width: 345px;
+  min-height: 320px;
+  border: none;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  box-shadow: -1px 0px 10px 5px rgb(236, 236, 236);
+}
+
+.section-2-container img {
+  width: 100%;
+  height: 240px;
+}
+.inner-detail {
+  font: 18px 'Libre Baskerville';
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 50px 20px 35px 20px;
+  gap: 30px;
+}
+
+.section-3-title {
+  font: bold 20px 'Libre Baskerville';
+  margin-bottom: 10px;
+}
+
+.section-3-title-2 {
+  font: bold 45px 'Libre Baskerville';
+  text-align: center;
+}
+
+.section-3-containers,
+.sec-3-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-3-containers {
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.sec-3-inner-container {
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  min-height: 320px;
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  box-shadow: -1px 0px 10px 5px rgb(236, 236, 236);
+  transition: transform 0.3s;
+}
+
+.sec-3-inner-container:hover {
+  border: 1.5px solid #05092a;
+  transform: translateY(10px);
+}
+.inner-deal {
+  background-color: #05092a;
+  color: white;
+  transform: none;
+  height: 390px;
+}
+
+@media (max-width: 750px) {
+  .inner-deal {
+    height: 320px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1120px) {
+  .section-3-containers {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+@media (min-width: 1121px) and (max-width: 2000px) {
+  .section-3-containers {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+
+.inner-deal img {
+  box-shadow: none;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.sec-inner-title {
+  color: white;
+}
+
+.sec-3-image {
+  width: 63px;
+  border-radius: 50%;
+  box-shadow: -1px 0px 10px 5px rgb(236, 236, 236);
+}
+.sec-3-title {
+  font: bold 20px 'Libre Baskerville';
+}
+.sec-3-icon {
+  font: 18px 'Quicksand';
+}
+
+.image-section {
+  position: relative;
+  top: -50px;
+  left: -550px;
+  z-index: -10;
+}
+
+.image-section img {
+  width: 56px;
+  opacity: 0.6;
+}
+
+.section-3-div {
+  padding: 20px 0;
+}
+
+#section-4,
+.sec-4-star {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#section-4 {
+  flex-direction: column;
+  background-color: #05092a;
+  padding: 25px 0px 50px 0;
+}
+
+.section-4-title h3 {
+  text-align: center;
+  font: 700 29px 'Libre Baskerville';
+  color: #e6b00c;
+}
+
+/*
+.section-4-liner {
+  height: 2px;
+  background-color: #e6b00c;
+  max-width: 80%; 
+  margin: 0 auto;
+}
+*/
+
+.section-4-containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.sec-box {
+  display: flex;
+}
+
+.sec-box,
+.sec-box-2 {
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 360px;
+}
+
+.sec-box-2 {
+  display: none;
+}
+
+/*media queries*/
+@media (max-width: 750px) {
+  .section-4-containers {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-box-2 {
+    display: flex;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1024px) {
+  .section-4-containers {
+    flex-wrap: wrap;
+  }
+
+  .sec-box {
+    flex: 0 0 0 48%;
+  }
+
+  .sec-box-2 {
+    display: flex;
+  }
+}
+
+.sec-box img,
+.sec-box-2 img {
+  border-radius: 15px;
+  width: 100%;
+  height: 240px;
+}
+
+.sec-4-star {
+  gap: 10px;
+}
+.icon-background {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.icon-background .fa-star,
+.fa-star-half-alt {
+  color: #e6b00c;
+  font-size: 15px;
+}
+.sec-4-star p,
+.insure {
+  font: 15px 'Roboto';
+  color: #ffffff;
+}
+
+.section-4-line {
+  width: 100%;
+  height: 2px;
+  background-color: #e6b00c;
+}
+
+.star-2 {
+  font: 29px 'Roboto';
+  color: #e6b00c;
+}
+
+.book-button {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #05092a;
+  color: #e6b00c;
+  padding: 14px 35px;
+  border: none;
+  border: 2px solid #e6b00c;
+  border-radius: 50px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #e6b00c;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.section-5,
+.containers-5,
+.containers-5-box {
+  display: flex;
+  justify-content: center;
+}
+
+.section-5 {
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0 120px 0;
+  background-color: #f3f3f3;
+  gap: 35px;
+}
+
+.containers-5 {
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+}
+
+.containers-5-box {
+  width: 450px;
+  background: linear-gradient(90deg, #05092a 17%, white 10%);
+  padding: 50px 50px 30px 30px;
+  gap: 20px;
+  border-radius: 0 15px 15px 15px;
+
+  color: #05092a;
+}
+
+.containers-5-box:hover {
+  background: #05092a;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/*.back-design{
+  background-color: #05092a;
+  width: 50px;
+}*/
+
+.containers-5-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+.containers-5 h6 {
+  font: 600 20px 'quicksand';
+  margin: 2px;
+}
+.containers-5-detail {
+  font: 14px 'roboto';
+  text-align: justify;
+  line-height: 35px;
+}
