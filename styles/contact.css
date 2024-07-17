@@ -1,34 +1,6 @@
 #section-1 {
-  position: relative;
-  height: 40vh;
-  width: 100%;
-  background: url('../images/background/bg-08-free-img.webp ') center top /
-    cover no-repeat fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#section-1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(360deg, #05092a 5%, transparent 100%);
-  z-index: 1;
-}
-
-#section-1 > * {
-  position: relative;
-  z-index: 2;
-}
-
-#section-1 div {
-  color: #e6b00c;
-  font: 600 60px 'Quicksand';
-  text-align: center;
+  background: url('../images/background/bg-08-free-img.webp') center top / cover
+    no-repeat fixed;
 }
 
 #section-2,
