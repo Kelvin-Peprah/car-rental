@@ -2,11 +2,11 @@
   position: relative;
   height: 40vh;
   width: 100%;
-  background: url('/images/background/bg-08-free-img.webp ') center top / cover
-    no-repeat fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: url('../images/background/bg-08-free-img.webp ') center top /
+    cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #section-1::before {
@@ -25,50 +25,111 @@
   z-index: 2;
 }
 
-#section-1 div{
+#section-1 div {
   color: #e6b00c;
   font: 600 60px 'Quicksand';
   text-align: center;
 }
 
 #section-2,
-.sec-2-containers,
-.sec-2-left,
-form,
-.first-sec {
+.section-2-right,
+.f-lname-section,
+.section-right-inner {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
 #section-2 {
-  flex-direction: column;
   gap: 20px;
   padding: 70px 20px 30px 20px;
-}
-.sec-2-containers {
-  gap: 30px;
+  align-items: center;
 }
 
-.first-sec {
-  gap: 15px;
+@media (max-width: 750px) {
+  #section-2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
-.sec-2-left,
-form {
+form,
+.section-2-right {
+  display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-self: start;
+  gap: 15px;
+  font: 500 16px 'Quicksand';
 }
 
-.form-container {
-  max-width: 350px;
-  padding: 10px;
+@media (max-width: 750px) {
+  form,
+  .section-2-right {
+    align-self: center;
+    gap: 15px;
+  }
 }
 
+@media (min-width: 751px) {
+  form {
+    max-width: 350px;
+  }
+}
 input,
 textarea {
   padding: 12px;
-  border-radius: 30px;
+  border-radius: 15px;
   border: 1px solid #05092a;
+  width: 100%;
+  font: 500 16px 'Quicksand';
+}
+
+input:focus {
+  background-color: #05092a;
+  color: #fff;
+  outline: none;
+  font: 500 16px 'Quicksand';
+}
+
+textarea {
+  height: 100px;
+}
+
+textarea:focus {
+  background-color: #05092a;
+  color: #fff;
+  outline: none;
+}
+
+.submit {
+  width: 170px;
+  align-self: center;
+  justify-self: center;
+}
+.message {
+  font: 400 16px 'Quicksand';
+}
+.f-lname-section {
+  gap: 15px;
+}
+
+.section-2-right h3 {
+  margin: 0;
+}
+
+.section-right-inner {
+  gap: 20px;
+}
+
+.section-2-right h3 {
+  font: 700 29px 'Libre Baskerville';
+}
+
+.inner-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font: 700 18px 'Libre Baskerville';
 }
 
 /*section 2 inner container*/
@@ -104,4 +165,25 @@ textarea {
 .icon:hover {
   background-color: #fff;
   color: #05092a;
+}
+
+.section-2-right h4 {
+  font: 700 20px 'Libre Baskerville';
+}
+
+/*Google map showing location of Dorfrimps Car Rentals*/
+#section-3 {
+  position: relative;
+  height: 250px;
+  padding: 200px;
+  margin: 0 20px 20px;
+}
+#section-3 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
 }
