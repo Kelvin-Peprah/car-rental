@@ -1,12 +1,12 @@
 #section-1 {
   background: url('../images/background/rent-car.webp') center center / cover
     no-repeat fixed;
-  border-bottom-right-radius: 240px;
+  border-bottom-right-radius: 100px;
   height: 50vh;
 }
 
 #section-1::before {
-  border-bottom-right-radius: 240px;
+  border-bottom-right-radius: 100px;
 }
 
 #section-2 {
@@ -14,8 +14,8 @@
   color: #05092a;
   font-family: 'Quicksand';
   padding: 70px 30px;
-  border-top-right-radius: 240px;
-  border-bottom-left-radius: 240px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 .main-container {
@@ -79,7 +79,8 @@
   font-size: 18px;
 }
 
-#section-3 {
+#section-3,
+.section-4-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +103,7 @@
   gap: 25px;
 }
 
-.grid-flexbox{
+.grid-flexbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +122,7 @@
   font-size: 25px;
   color: #05092a;
 }
-.inner-flex{
+.inner-flex {
   display: flex;
   flex-direction: column;
   gap: inherit;
@@ -145,6 +146,37 @@
   width: 100%;
 }
 
-.left-container{
+.left-container {
   flex-direction: row-reverse;
+}
+
+#section-4 {
+  padding: 30px 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 100px;
+  background-color: #05092a;
+  color: #fff;
+}
+
+.section-4-container {
+  max-width: 1140px;
+  padding: 0;
+}
+
+.text-p p{
+  font: 500 18px 'Quicksand';
+  margin: 0 0 9px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+#section-5{
+  display: flex;
+}
+
+.sec-5-div{
+  font: 700 29px 'Quicksand';
 }
