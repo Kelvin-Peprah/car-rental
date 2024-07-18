@@ -104,23 +104,6 @@ textarea:focus {
   font: 700 18px 'Libre Baskerville';
 }
 
-/*section 2 inner container*/
-.link-button-1 {
-  background-color: #05092a;
-  color: #fff;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 50px;
-  transition: 0.3s;
-  cursor: pointer;
-  font: 500 15px 'Quicksand';
-  text-decoration: none;
-}
-
-.link-button-1:hover {
-  background-color: #191970;
-}
-
 /*font awesome*/
 .icon {
   display: inline-block;
