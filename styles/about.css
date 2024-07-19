@@ -230,6 +230,7 @@
   /*section 5*/
   .section-5-container {
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     gap: 20px;
     margin: 0;
@@ -237,6 +238,7 @@
   }
   .sec-5-div {
     font: 700 20px 'Quicksand';
+    text-align: center;
   }
 }
 
