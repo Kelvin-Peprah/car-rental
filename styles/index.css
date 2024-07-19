@@ -1,3 +1,4 @@
+/*section-1*/
 #section-1 {
   position: relative;
   height: 100vh;
@@ -36,7 +37,9 @@
   position: relative;
   z-index: 2;
 }
+/*end*/
 
+/*section-2*/
 #section-2 {
   display: flex;
   justify-content: center;
@@ -89,7 +92,9 @@
   margin-top: 20px;
   font-weight: bold;
 }
+/*end*/
 
+/*section-3*/
 #section-3 {
   display: flex;
   justify-content: center;
@@ -109,101 +114,14 @@
   text-align: center;
 }
 
-.section-3-containers,
-.sec-3-inner-container {
+.section-3-containers{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-3-containers {
-  flex-flow: row wrap;
-  gap: 30px;
-}
+/*end*/
 
-.sec-3-inner-container {
-  flex-direction: column;
-  gap: 15px;
-  width: 350px;
-  min-height: 320px;
-  border: none;
-  border-radius: 20px;
-  padding-bottom: 20px;
-  box-shadow: -1px 0px 10px 5px rgb(236, 236, 236);
-  transition: transform 0.3s;
-}
-
-.sec-3-inner-container:hover {
-  border: 1.5px solid #05092a;
-  transform: translateY(10px);
-}
-.inner-deal {
-  background-color: #05092a;
-  color: white;
-  transform: none;
-  height: 390px;
-}
-
-@media (max-width: 766px) {
-  .inner-deal {
-    height: 320px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
-  .section-3-containers {
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-}
-@media (min-width: 1025px) {
-  .section-3-containers {
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-}
-
-.inner-deal img {
-  box-shadow: none;
-}
-
-.clearfix::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
-.sec-inner-title {
-  color: white;
-}
-
-.sec-3-image {
-  width: 63px;
-  border-radius: 50%;
-  box-shadow: -1px 0px 10px 5px rgb(236, 236, 236);
-}
-.sec-3-title {
-  font: bold 20px 'Libre Baskerville';
-}
-.sec-3-icon {
-  font: 18px 'Quicksand';
-}
-
-.image-section {
-  position: relative;
-  top: -50px;
-  left: -550px;
-  z-index: -10;
-}
-
-.image-section img {
-  width: 56px;
-  opacity: 0.6;
-}
-
-.section-3-div {
-  padding: 20px 0;
-}
-
+/*section-4*/
 #section-4,
 .sec-4-star {
   display: flex;
@@ -339,6 +257,9 @@
   color: #ffffff;
 }
 
+/*end*/
+
+/*section 5*/
 #section-5,
 .containers-5,
 .containers-5-box {
@@ -417,3 +338,4 @@
   }
     */
 }
+/*end*/
