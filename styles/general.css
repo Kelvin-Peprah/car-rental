@@ -321,7 +321,6 @@ footer h4 {
 }
 @media (min-width: 1025px) {
   .section-3-containers {
-    flex-wrap: nowrap;
     width: 100%;
   }
 }
