@@ -311,6 +311,10 @@ footer h4 {
   .inner-deal {
     height: 320px;
   }
+
+  .section-3-containers{
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
