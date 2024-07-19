@@ -290,10 +290,20 @@ footer h4 {
   border: 1.5px solid #05092a;
 }
 
-.inner-deal {
+/*media query*/
+@media (max-width: 1025px) {
+  .sec-2-inner-grid{
+    padding: 9px;
+  }
+}
+.inner-deal,
+.inner-deal-sec2 {
   background-color: #05092a;
   color: white;
   transform: none;
+}
+
+.inner-deal {
   height: 390px;
 }
 
@@ -316,7 +326,7 @@ footer h4 {
   }
 }
 
-.inner-deal img {
+.inner-deal img, .inner-deal-sec2 img {
   box-shadow: none;
 }
 
@@ -342,6 +352,7 @@ footer h4 {
 /*section 2*/
 .sec-2-title {
   font: bold 20px 'Quicksand';
+  text-align: center;
 }
 
 .sec-2-content {
