@@ -27,7 +27,7 @@
 
 .sec-2-box-1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
   flex-direction: column;
   padding: 10px;
@@ -46,7 +46,6 @@
 @media (max-width: 766px) {
   .section-2-container {
     align-items: center;
-    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -56,13 +55,18 @@
     padding: 0;
   }
 
-  .text-2, #section-3 div {
+  .text-2,
+  #section-3 div {
     text-align: center;
     font-size: 40px;
   }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
+  .sec-2-box-1 {
+    width: 45.5%;
+  }
+
   .text-2 {
     font: 600 40px 'Quicksand';
   }
@@ -99,7 +103,6 @@
   transition: width 0.3s;
 }
 
-/*start*/
 .sec-2-box-1 span {
   font: 600 15px 'Quicksand';
 }
@@ -140,4 +143,56 @@
   font: 600 45px 'Quicksand';
   color: #05092a;
   text-align: center;
+}
+/*section 4*/
+#section-4 {
+  padding: 40px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-4-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.sec-4-inner-grid {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+}
+
+.sec-4-inner-grid img {
+  width: 100%;
+  border-radius: 15px 0 15px 15px;
+}
+
+.sec-4-inner-grid div {
+  font: 600 29px 'Quicksand';
+  color: #05092a;
+  text-align: center;
+}
+
+.sec-4-inner-grid p {
+  font: 600 15px 'Quicksand';
+  color: #d5a515;
+  text-align: justify;
+}
+
+@media (max-width: 766px) {
+  .sec-4-grid {
+    grid-template-columns: 1fr;
+  }
+  .sec-4-inner-grid div {
+    font-size: 25px;
+  }
+  .sec-4-inner-grid p {
+    font-size: 14px;
+  }
 }
