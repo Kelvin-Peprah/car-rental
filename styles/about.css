@@ -169,7 +169,7 @@
 }
 
 /*media query*/
-@media (max-width: 750px) {
+@media (max-width: 766px) {
   #section-2 {
     padding: 30px 20px;
   }
@@ -219,13 +219,13 @@
   }
 }
 
-@media (min-width: 751px) {
+@media (min-width: 767px) {
   .left-container {
     flex-direction: row-reverse;
   }
 }
 
-@media (min-width: 751px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   #section-3 {
     padding: 30px 20px;
   }
