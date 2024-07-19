@@ -109,6 +109,7 @@ textarea:focus {
   align-items: center;
   gap: 10px;
   font: 700 18px 'Libre Baskerville';
+  width: 100%;
 }
 
 /*font awesome*/
