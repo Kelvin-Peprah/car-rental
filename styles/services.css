@@ -15,11 +15,93 @@
 
 /*section 2*/
 #section-2 {
+  padding: 60px 10px 10px;
+}
+
+.section-2-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 60px 10px 10px;
-  gap: 15px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.sec-2-box-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 375px;
+}
+.text-1 {
+  font: 600 18px 'Quicksand';
+  color: #d5a515;
+}
+
+.text-2 {
+  font: 600 45px 'Quicksand';
+  color: #05092a;
+}
+
+@media (max-width: 766px) {
+  .section-2-container {
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sec-2-box-1 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-2, #section-3 div {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .text-2 {
+    font: 600 40px 'Quicksand';
+  }
+}
+
+/* Container for the progress bar */
+.my-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Container for the progress bar */
+.progress-container {
+  width: 100%;
+  background-color: #c9c9c9;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  margin: 5px 0;
+  font: 600 13px 'Quicksand';
+}
+
+/* The actual progress bar */
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #05092a, #05092a);
+  text-align: right;
+  line-height: 20px;
+  color: white;
+  transition: width 0.3s;
+}
+
+/*start*/
+.sec-2-box-1 span {
+  font: 600 15px 'Quicksand';
 }
 
 .sec-2-grid {
@@ -31,7 +113,7 @@
 }
 
 @media (max-width: 766px) {
-  #section-2 {
+  .section-2-container {
     flex-direction: column;
   }
   .sec-2-grid {
@@ -48,4 +130,14 @@
   .container-4 {
     margin-bottom: -20px;
   }
+}
+/*end*/
+#section-3 {
+  padding: 15px;
+}
+
+#section-3 div {
+  font: 600 45px 'Quicksand';
+  color: #05092a;
+  text-align: center;
 }
