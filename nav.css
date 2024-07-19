@@ -1,0 +1,54 @@
+/*overlay navigation menu*/
+
+/*@media (max-width: 766px) {
+}
+*/
+
+#overlay-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#nav-2-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #05092a;
+}
+#nav-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 20px 0;
+  width: 100%;
+}
+
+.inner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+/*
+.inner-nav {
+  font-size: 16px;
+  padding: 0;
+}*/
+
+.icon {
+  font: 20px;
+  padding: 0;
+}
+
+.list {
+  font: 600 16px 'Quicksand';
+}
+
+.last-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0 0;
+}

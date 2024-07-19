@@ -6,6 +6,21 @@
     no-repeat scroll;
 }
 
+@media (max-width: 766px) {
+  #section-1 {
+    max-height: 62vh;
+  background: url('../images/cars/corolla.webp') center center / contain
+    no-repeat scroll;}
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  #section-1 {
+    height: 60vh;
+    background: url('../images/cars/corolla.webp') center center / contain
+      no-repeat scroll;
+  }
+}
+
 #section-1::before {
   content: '';
   position: absolute;
@@ -20,14 +35,6 @@
 #section-1 > * {
   position: relative;
   z-index: 2;
-}
-
-/*media query*/
-
-@media (max-width: 766px) {
-  #section-1 {
-    max-height: 100vh;
-  }
 }
 
 #section-2 {
@@ -332,14 +339,14 @@
   color: #ffffff;
 }
 
-.section-5,
+#section-5,
 .containers-5,
 .containers-5-box {
   display: flex;
   justify-content: center;
 }
 
-.section-5 {
+#section-5 {
   align-items: center;
   flex-direction: column;
   padding: 90px 0 120px 0;
@@ -396,4 +403,17 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  #section-5 {
+    padding: 60px 0 60px;
+  }
+    /*
+  .containers-5{
+    flex-flow: column wrap;
+  }
+    */
 }

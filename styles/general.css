@@ -69,28 +69,29 @@ li a:active {
   color: #fff;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
-.hamburger{
+.hamburger {
   font-size: 25px;
 }
 
-@media (max-width:766px) {
-  #nav{
+@media (max-width: 766px) {
+  #nav {
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
-  
   }
 
-  ul, nav a{
+  ul,
+  nav a {
     display: none;
   }
 
-  .hamburger-menu{
+  .hamburger-menu {
     display: block;
+    cursor: pointer;
   }
 
   main {
@@ -98,7 +99,7 @@ li a:active {
   }
 }
 
-@media (min-width: 767px) and (max-width:1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   .main-logo img {
     width: 100%;
   }
@@ -164,8 +165,8 @@ footer h4 {
   .image-footer {
     max-width: 300px;
   }
- 
-  .footer-2{
+
+  .footer-2 {
     flex-direction: column;
     gap: 10px;
     font-size: 14px;
@@ -211,7 +212,7 @@ footer h4 {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(360deg, #05092a 5%, transparent 100%);
+  background: linear-gradient(360deg, #05092a 5%, transparent 40%);
   z-index: 1;
 }
 
@@ -227,12 +228,11 @@ footer h4 {
 }
 
 @media (max-width: 766px) {
-  
-  #section-1{
+  #section-1 {
     max-height: 23vh;
   }
-  
-  #section-1 div{
+
+  #section-1 div {
     font: 500 35px 'Quicksand';
   }
 }
@@ -254,4 +254,3 @@ footer h4 {
 .link-button-1:hover {
   background-color: #191970;
 }
-

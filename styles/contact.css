@@ -3,6 +3,13 @@
     no-repeat fixed;
 }
 
+@media (max-width:766px) {
+  #section-1 {
+    background: url('../images/background/bg-08-free-img.webp') center top / cover
+      no-repeat scroll;
+  }
+}
+
 #section-2,
 .section-2-right,
 .f-lname-section,
