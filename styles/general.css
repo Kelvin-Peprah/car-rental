@@ -160,6 +160,17 @@ footer h4 {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .image-footer {
+    max-width: 300px;
+  }
+ 
+  .footer-2{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+}
 .div1 {
   display: inline-flex;
   gap: 20px;
@@ -186,7 +197,7 @@ footer h4 {
 /*section 1 for about, contact & services pages*/
 #section-1 {
   position: relative;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -211,8 +222,19 @@ footer h4 {
 
 #section-1 div {
   color: #e6b00c;
-  font: 600 60px 'Quicksand';
+  font: 500 60px 'Quicksand';
   text-align: center;
+}
+
+@media (max-width: 766px) {
+  
+  #section-1{
+    max-height: 23vh;
+  }
+  
+  #section-1 div{
+    font: 500 35px 'Quicksand';
+  }
 }
 
 /*buttons style*/

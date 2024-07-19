@@ -1,5 +1,5 @@
 #section-1 {
-  background: url('../images/background/rent-car.webp') center center / cover
+  background: url('../images/background/rent-car.webp') left center / cover
     no-repeat fixed;
   border-bottom-right-radius: 100px;
   height: 50vh;
@@ -170,12 +170,33 @@
 
 /*media query*/
 @media (max-width: 766px) {
+  #section-1 {
+    background: url('../images/background/rent-car.webp') top center / contain
+      no-repeat fixed;
+    border-bottom-right-radius: 70px;
+  }
+
   #section-2 {
     padding: 30px 20px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
   }
   .main-container {
     align-items: center;
     padding: 0;
+  }
+
+  #section-2 h3 {
+    font-size: 25px;
+  }
+  #section-2 h4 {
+    font-size: 18px;
+  }
+  .chevron{
+    font-size: 16px;
+  }
+  #section-2 span {
+    font-size: 16px;
   }
 
   /*section 3*/
