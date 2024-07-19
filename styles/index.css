@@ -10,8 +10,9 @@
 @media (max-width: 766px) {
   #section-1 {
     max-height: 62vh;
-  background: url('../images/cars/corolla.webp') center center / contain
-    no-repeat scroll;}
+    background: url('../images/cars/corolla.webp') center center / contain
+      no-repeat scroll;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -114,10 +115,12 @@
   text-align: center;
 }
 
-.section-3-containers{
+.section-3-containers {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  gap: 30px;
 }
 /*end*/
 
@@ -326,13 +329,11 @@
   align-items: start;
 }
 
-
-
 @media (min-width: 767px) and (max-width: 1024px) {
   #section-5 {
     padding: 60px 0 60px;
   }
-    /*
+  /*
   .containers-5{
     flex-flow: column wrap;
   }
