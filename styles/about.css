@@ -218,6 +218,9 @@
   }
 
   /*section 4*/
+  #section-4{
+    border-top-left-radius: 70px;
+  }
   .div-1 {
     font-size: 25px;
   }
