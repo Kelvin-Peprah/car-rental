@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="images/favicon/favicon.png" />
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="overlay-nav.css" />
   </head>
   <body>
     <nav id="overlay-nav">
@@ -20,29 +20,30 @@
       <div id="nav-2">
         <div class="inner-nav">
           <li class="fas fa-home icon"></li>
-          <li class="list">Home</li>
+          <a href="index.html" class="list">Home</a>
         </div>
         <div class="inner-nav">
           <li class="fas fa-briefcase icon"></li>
-          <li class="list">About Us</li>
+          <a href="about.html" class="list">About Us</a>
         </div>
         <div class="inner-nav">
           <li class="fas fa-cog icon"></li>
-          <li class="list">Services</li>
+          <a href="services.html" class="list">Services</a>
         </div>
         <div class="inner-nav">
           <li class="fas fa-car icon"></li>
-          <li class="list">Our fleet</li>
+          <a href="fleet.html" class="list">Our fleet</a>
         </div>
         <div class="inner-nav">
           <li class="fas fa-envelope icon"></li>
-          <li class="list">Contact</li>
+          <a href="contact.html" class="list">Contact</a>
         </div>
       </div>
       <div class="last-nav">
-        <a href="tel:+233555299335" class="link-button">0555299335</a>
-        <a href="tel:+233555299335" class="link-button">0243333164</a>
+        <a href="tel:+233555299335" class="nav-2-link">0555299335</a>
+        <a href="tel:+233555299335" class="nav-2-link">0243333164</a>
       </div>
+      <li class="fas fa-close close-icon" onclick="closeNav()"></li>
     </nav>
   </body>
 </html>
