@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlay Navigation</title>
+    <style>
+     
+
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay-content a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay-content a:hover,
+      .overlay-content a:focus {
+        color: #f1f1f1;
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .menu-icon {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlayNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <span class="menu-icon" onclick="openNav()">&#9776;</span>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
