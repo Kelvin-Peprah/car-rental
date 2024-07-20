@@ -134,6 +134,12 @@ textarea:focus {
   font: 700 20px 'Libre Baskerville';
 }
 
+@media (max-width:766px) {
+  .link-button-1 {
+    font-size: 13px;
+  }
+}
+
 /*Google map showing location of Dorfrimps Car Rentals*/
 #section-3 {
   position: relative;
