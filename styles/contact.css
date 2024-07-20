@@ -113,7 +113,7 @@ textarea:focus {
 }
 
 /*font awesome*/
-.icon {
+.social-icon {
   display: inline-block;
   background-color: #05092a;
   color: white;
@@ -125,7 +125,7 @@ textarea:focus {
   text-align: center center;
 }
 
-.icon:hover {
+.social-icon:hover {
   background-color: #fff;
   color: #05092a;
 }
