@@ -84,8 +84,8 @@ li a:active {
     padding: 8px 20px;
   }
 
-  ul,
-  nav a {
+  #nav ul,
+  #nav a {
     display: none;
   }
 
