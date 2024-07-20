@@ -1,8 +1,8 @@
 /*overlay navigation*/
 function openNav() {
-  document.getElementById('overlayNav').style.width = '100%';
+  document.querySelector('.hamburger').style.width = '100%';
 }
 
 function closeNav() {
-  document.getElementById('overlayNav').style.width = '0%';
+  document.querySelector('.overlay-nav').style.width = '0%';
 }
