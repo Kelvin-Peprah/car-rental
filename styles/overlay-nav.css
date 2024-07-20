@@ -7,11 +7,18 @@
 #overlay-nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  z-index: 100;
+}
+
+@media (min-width: 767px) {
+  #overlay-nav {
+    display: none;
+  }
 }
 
 #nav-2-image {
   width: 100%;
+  height: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +37,8 @@
   align-items: center;
   justify-content: start;
   gap: 10px;
+  padding-bottom: 10px;
 }
-/*
-.inner-nav {
-  font-size: 16px;
-  padding: 0;
-}*/
-
 .icon {
   font: 20px;
   padding: 0;
@@ -46,9 +48,29 @@
   font: 600 16px 'Quicksand';
 }
 
-.last-nav{
+.last-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 60px 0 0;
+  padding: 50px 0 0;
+}
+
+.nav-2-link {
+  background-color: #05092a;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  font: 400 16px 'Quicksand';
+}
+
+.close-icon {
+  font-size: 25px;
+  text-align: center;
+
+  position: absolute;
+  left: 50%;
+  top: 80%;
 }
