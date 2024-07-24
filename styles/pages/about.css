@@ -1,5 +1,5 @@
 #section-1 {
-  background: url('../images/background/rent-car.webp') left center / cover
+  background: url('/images/background/rent-car.webp') left center / cover
     no-repeat fixed;
   border-bottom-right-radius: 100px;
   height: 50vh;
@@ -171,7 +171,7 @@
 /*media query*/
 @media (max-width: 766px) {
   #section-1 {
-    background: url('../images/background/rent-car.webp') top center / contain
+    background: url('/images/background/rent-car.webp') top center / contain
       no-repeat fixed;
     border-bottom-right-radius: 70px;
   }

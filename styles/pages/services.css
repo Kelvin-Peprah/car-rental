@@ -1,13 +1,13 @@
 /*section 1*/
 #section-1 {
-  background: url('../images/background/bg-10-free-img.webp') right bottom /
+  background: url('/images/background/bg-10-free-img.webp') right bottom /
     cover no-repeat fixed;
   height: 50vh;
 }
 
 @media (max-width: 766px) {
   #section-1 {
-    background: url('../images/background/bg-10-free-img.webp') top center /
+    background: url('/images/background/bg-10-free-img.webp') top center /
       cover no-repeat scroll;
   }
 }
