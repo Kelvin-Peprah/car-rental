@@ -94,31 +94,50 @@
 			<!--section 2-->
 			<section id="section-2">
 				<div class="grid-container">
-					<div class="flex-container">
-						<div class="product-image">
-							<img src="images/cars/mitsubishi.webp" alt="mitsubishi" />
+					<div id="divider">
+						<div class="flex-container">
+							<div class="product-image">
+								<img src="images/cars/mitsubishi.webp" alt="mitsubishi" />
+							</div>
+							<div class="flex-box">
+								<div class="products">
+									<div class="product-name">Product</div>
+									<div class="product-make">Mitsubishi Outlander</div>
+								</div>
+								<div class="products">
+									<div class="product-price">Price</div>
+									<div class="price">$1000</div>
+								</div>
+								<div class="products">
+									<div class="product-quantity">Unit</div>
+									<div class="product-quantity-count">5</div>
+								</div>
+								<div class="products">
+									<div class="product-subtotal">Subtotal</div>
+									<div class="product-sub-amount">$1000</div>
+								</div>
+							</div>
 						</div>
-						<div class="flex-box">
-							<div class="products">
-								<div class="product-name">Product</div>
-								<div class="product-make">Mitsubishi Outlander</div>
-							</div>
-							<div class="products">
-								<div class="product-price">Price</div>
-								<div class="price">$1000</div>
-							</div>
-							<div class="products">
-								<div class="product-quantity">Quantity</div>
-								<div class="product-quantity-count">5</div>
-							</div>
-							<div class="products">
-								<div class="product-subtotal">Subtotal</div>
-								<div class="product-sub-amount">$1000</div>
-							</div>
-						</div>
+						<form action="#" method="get" class="flex-container">
+							<input
+								type="text"
+								name="coupon"
+								id="coupon"
+								placeholder="Coupon code"
+							/>
+							<button type="submit" class="link-button-1">Apply Coupon</button>
+						</form>
 					</div>
+
 					<div class="flex-container cart-box">
-						<div>Cart Totals</div>
+						<div class="cart-title">Cart Totals</div>
+						<div class="cart-inner-box">
+
+								<div>Subtotal</div>
+								<div>$1000</div>
+							</div>
+							<div class="inner-box">Rental Duration</div>
+						</div>
 					</div>
 				</div>
 			</section>
