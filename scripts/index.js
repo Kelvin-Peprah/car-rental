@@ -1,3 +1,4 @@
+import { cart, addToCart } from '../data/cart.js';
 import { products } from '../data/product.js';
 
 let productHTML = '';
@@ -23,7 +24,11 @@ products.forEach((product) => {
       <p class="insure">
         ${product.keywords}
       </p>
-      <button class="book-button">BOOK NOW</button>
+      <button class="book-button js-book-button" data-product-id="${
+				product.id
+			}">
+        BOOK NOW
+      </button>
     </div>
   `;
 });
@@ -32,11 +37,31 @@ document.querySelector('.js-products-containers').innerHTML = productHTML;
 
 /*hides the last product element*/
 products.forEach((product) => {
-  const productId = `${product.id}`;
+	const productId = `${product.id}`;
 
 	const hideProduct = document.querySelector(`.product-id-${productId}`);
 	if (productId === '54e0eccd-8f36-462b-b68a-8182611d9add') {
 		hideProduct.classList.add('hide-item');
 	}
-  console.log(hideProduct)
+});
+
+
+
+function updateCartquantity() {
+	let cartQuantity = 0;
+	cart.forEach((cartItem) => {
+		cartQuantity += cartItem.quantity;
+	});
+
+  document.querySelector('.js-cart-no').innerHTML = cartQuantity;
+}
+
+/*add to rental cart */
+document.querySelectorAll('.js-book-button').forEach((bookButton) => {
+	bookButton.addEventListener('click', () => {
+		const productId = bookButton.dataset.productId;
+
+		addToCart(productId);
+		updateCartquantity();
+	});
 });
