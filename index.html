@@ -1,358 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dorfrimps Car Rentals</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="icon" href="images/favicon/favicon.png" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dorfrimps Car Rentals</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="icon" href="images/favicon/favicon.png" />
 
-    <link rel="stylesheet" href="styles/shared/general.css" />
-    <link rel="stylesheet" href="styles/shared/nav.css">
-    <link rel="stylesheet" href="styles/pages/index.css" />
-  </head>
-  <body>
-    <header>
-      <nav id="nav">
-        <div class="main-logo">
-          <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Dorfrimps Car Rental Logo"
-              width="70%"
-            />
-          </a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="fleet.html">Our Fleet</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="tel:+233555299335" class="link-button">+233555299335</a>
-        <div class="hamburger-menu">
-          <i class="fas fa-bars hamburger" onclick="openNav()"></i>
-        </div>
-      </nav>
-      <!--Overlay navigation-->
-      <nav id="overlay-nav">
-        <div id="nav-2-image">
-          <a href="index.html"
-            ><img src="images/logos/logo.png" alt="logo"
-          /></a>
-        </div>
-        <div id="nav-2">
-          <div class="inner-nav">
-            <i class="fas fa-home icon"></i>
-            <a href="index.html" class="list">Home</a>
-          </div>
-          <div class="inner-nav">
-            <i class="fas fa-briefcase icon"></i>
-            <a href="about.html" class="list">About Us</a>
-          </div>
-          <div class="inner-nav">
-            <i class="fas fa-cog icon"></i>
-            <a href="services.html" class="list">Services</a>
-          </div>
-          <div class="inner-nav">
-            <i class="fas fa-car icon"></i>
-            <a href="fleet.html" class="list">Our fleet</a>
-          </div>
-          <div class="inner-nav">
-            <i class="fas fa-envelope icon"></i>
-            <a href="contact.html" class="list">Contact</a>
-          </div>
-        </div>
-        <div class="last-nav">
-          <a href="tel:+233555299335" class="nav-2-link">0555299335</a>
-          <a href="tel:+233555299335" class="nav-2-link">0243333164</a>
-        </div>
-        <a
-          href="javascript:void(0)"
-          class="fas fa-close close-icon"
-          onclick="closeNav()"
-        ></a>
-      </nav>
-    </header>
-    <main>
-      <section id="section-1"></section>
-      <!--section 2-->
-      <section id="section-2">
-        <span class="section-2-span">Why Choose Dorfrimps Car Rentals</span>
-        <div class="sec-2-main-container">
-          <div class="section-2-container">
-            <div>
-              <img src="images/lady-2.webp" alt="smiling lady in car" />
-            </div>
-            <div class="inner-detail"><a href="#">why book us</a></div>
-          </div>
-          <div class="section-2-container">
-            <div>
-              <img src="images/lady sitting.webp" alt="smiling lady in car" />
-            </div>
-            <div class="inner-detail"><a href="#">Great service</a></div>
-          </div>
-          <div class="section-2-container">
-            <div>
-              <img src="images/guy driving.webp" alt="smiling lady in car" />
-            </div>
-            <div class="inner-detail"><a href="#">About us</a></div>
-          </div>
-        </div>
-      </section>
-      <!--section 3-->
-      <section id="section-3">
-        <div class="section-3-title">HOW IT WORKS</div>
-        <div class="section-3-title-2">Easy Steps to Make a Rental</div>
-        <div class="section-3-containers">
-          <div class="sec-3-inner-container">
-            <img
-              src="images/icons/icons_4-800x800-1.webp"
-              alt="car icon"
-              class="sec-3-image"
-            />
-            <span class="sec-3-title">Choose A Car</span>
-            <a href="#"
-              ><span class="sec-3-icon"><strong>&gt;</strong> Car List</span></a
-            >
-          </div>
-          <div class="sec-3-inner-container inner-deal">
-            <img
-              src="images/icons/icons_7-800x800-1.webp"
-              alt="car icon"
-              class="sec-3-image"
-            />
-            <span class="sec-3-title">Book A Date</span>
-            <a href="#"
-              ><span class="sec-3-icon sec-inner-title">
-                <strong>&gt;</strong> Select Date
-              </span></a
-            >
-          </div>
-          <div class="sec-3-inner-container">
-            <img
-              src="images/icons/icons_6-800x800-1.webp"
-              alt="car icon"
-              class="sec-3-image"
-            />
-            <span class="sec-3-title">Enjoy The Car</span>
-            <a href="#"
-              ><span class="sec-3-icon"
-                ><strong>&gt;</strong> Review Us</span
-              ></a
-            >
-          </div>
-        </div>
-        <!-- image to be shown later
+		<link rel="stylesheet" href="styles/shared/general.css" />
+		<link rel="stylesheet" href="styles/shared/nav.css" />
+		<link rel="stylesheet" href="styles/pages/index.css" />
+
+    <script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="nav">
+				<div class="main-logo">
+					<a href="index.html">
+						<img
+							src="images/logos/logo.png"
+							alt="Dorfrimps Car Rental Logo"
+							width="70%"
+						/>
+					</a>
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="fleet.html">Our Fleet</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<a href="tel:+233555299335" class="link-button">+233555299335</a>
+				<div class="hamburger-menu">
+					<i class="fas fa-bars hamburger" onclick="openNav()"></i>
+				</div>
+			</nav>
+			<!--Overlay navigation-->
+			<nav id="overlay-nav">
+				<div id="nav-2-image">
+					<a href="index.html"
+						><img src="images/logos/logo.png" alt="logo"
+					/></a>
+				</div>
+				<div id="nav-2">
+					<div class="inner-nav">
+						<i class="fas fa-home icon"></i>
+						<a href="index.html" class="list">Home</a>
+					</div>
+					<div class="inner-nav">
+						<i class="fas fa-briefcase icon"></i>
+						<a href="about.html" class="list">About Us</a>
+					</div>
+					<div class="inner-nav">
+						<i class="fas fa-cog icon"></i>
+						<a href="services.html" class="list">Services</a>
+					</div>
+					<div class="inner-nav">
+						<i class="fas fa-car icon"></i>
+						<a href="fleet.html" class="list">Our fleet</a>
+					</div>
+					<div class="inner-nav">
+						<i class="fas fa-envelope icon"></i>
+						<a href="contact.html" class="list">Contact</a>
+					</div>
+				</div>
+				<div class="last-nav">
+					<a href="tel:+233555299335" class="nav-2-link">0555299335</a>
+					<a href="tel:+233555299335" class="nav-2-link">0243333164</a>
+				</div>
+				<a
+					href="javascript:void(0)"
+					class="fas fa-close close-icon"
+					onclick="closeNav()"
+				></a>
+			</nav>
+		</header>
+		<main>
+			<section id="section-1"></section>
+			<!--section 2-->
+			<section id="section-2">
+				<span class="section-2-span">Why Choose Dorfrimps Car Rentals</span>
+				<div class="sec-2-main-container">
+					<div class="section-2-container">
+						<div>
+							<img src="images/lady-2.webp" alt="smiling lady in car" />
+						</div>
+						<div class="inner-detail"><a href="#">why book us</a></div>
+					</div>
+					<div class="section-2-container">
+						<div>
+							<img src="images/lady sitting.webp" alt="smiling lady in car" />
+						</div>
+						<div class="inner-detail"><a href="#">Great service</a></div>
+					</div>
+					<div class="section-2-container">
+						<div>
+							<img src="images/guy driving.webp" alt="smiling lady in car" />
+						</div>
+						<div class="inner-detail"><a href="#">About us</a></div>
+					</div>
+				</div>
+			</section>
+			<!--section 3-->
+			<section id="section-3">
+				<div class="section-3-title">HOW IT WORKS</div>
+				<div class="section-3-title-2">Easy Steps to Make a Rental</div>
+				<div class="section-3-containers">
+					<div class="sec-3-inner-container">
+						<img
+							src="images/icons/icons_4-800x800-1.webp"
+							alt="car icon"
+							class="sec-3-image"
+						/>
+						<span class="sec-3-title">Choose A Car</span>
+						<a href="#"
+							><span class="sec-3-icon"><strong>&gt;</strong> Car List</span></a
+						>
+					</div>
+					<div class="sec-3-inner-container inner-deal">
+						<img
+							src="images/icons/icons_7-800x800-1.webp"
+							alt="car icon"
+							class="sec-3-image"
+						/>
+						<span class="sec-3-title">Book A Date</span>
+						<a href="#"
+							><span class="sec-3-icon sec-inner-title">
+								<strong>&gt;</strong> Select Date
+							</span></a
+						>
+					</div>
+					<div class="sec-3-inner-container">
+						<img
+							src="images/icons/icons_6-800x800-1.webp"
+							alt="car icon"
+							class="sec-3-image"
+						/>
+						<span class="sec-3-title">Enjoy The Car</span>
+						<a href="#"
+							><span class="sec-3-icon"
+								><strong>&gt;</strong> Review Us</span
+							></a
+						>
+					</div>
+				</div>
+				<!-- image to be shown later
           <div class="image-section">
             <img src="images/icons/Asset-3_4.webp" alt="" />
           </div>
          -->
-        <div class="section-3-div">
-          <span>Pay in Cash / Mobile Money / Credit Card upon Delivery</span>
-        </div>
-      </section>
-      <!--section 4-->
-      <section id="section-4">
-        <div class="section-4-title">
-          <h3>Our Fleet</h3>
-          <!--<div class="section-4-liner"></div>-->
-        </div>
-        <div class="section-4-containers">
-          <div class="sec-box">
-            <img src="images/cars/rav4.webp" alt="toyota rav4" />
-            <div class="sec-4-star">
-              <p>Toyota Rav4</p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt icon"></i>
-              </div>
-            </div>
-            <div class="star-2">₵800 /day</div>
-            <span class="section-4-line"></span>
-            <p class="insure">
-              Insured, leather interior, Andriod Auto, Apple Carplay.
-            </p>
-            <button class="book-button">BOOK NOW</button>
-          </div>
-          <div class="sec-box">
-            <img src="images/cars/yaris.webp" alt="Toyota Yaris IA" />
-            <div class="sec-4-star">
-              <p>Toyota Yaris IA</p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt icon"></i>
-              </div>
-            </div>
-            <div class="star-2">₵500 /day</div>
-            <span class="section-4-line"></span>
-            <p class="insure">Insured, advanced safety features, affordable.</p>
-            <button class="book-button">BOOK NOW</button>
-          </div>
-          <div class="sec-box">
-            <img src="images/cars/mitsubishi.webp" alt="Mitsubishi Outlander" />
-            <div class="sec-4-star">
-              <p>Mitsubishi Outlander</p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt icon"></i>
-              </div>
-            </div>
-            <div class="star-2">₵800 /day</div>
-            <span class="section-4-line"></span>
-            <p class="insure">
-              Insured, leather interior, safety features, Andriod Auto.
-            </p>
-            <button class="book-button">BOOK NOW</button>
-          </div>
-          <div class="sec-box-2">
-            <img
-              src="images/cars/Toyota-Highlander.webp"
-              alt="Toyota Highlander"
-            />
-            <div class="sec-4-star">
-              <p>Toyota Highlander</p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt icon"></i>
-              </div>
-            </div>
-            <div class="star-2">₵1200 /day</div>
-            <span class="section-4-line"></span>
-            <p class="insure">
-              Insured, leather interior, Andriod Auto, Apple Carplay.
-            </p>
-            <button class="book-button">BOOK NOW</button>
-          </div>
-        </div>
-      </section>
-      <!--section 5-->
-      <section id="section-5">
-        <div class="containers-5-div">Our Happy Clients!</div>
-        <div class="containers-5">
-          <div class="containers-5-box">
-            <img src="images/df-cool.webp" alt="customer image icon" />
-            <div class="container-5-inner-detail">
-              <h6>Sarah Obeng</h6>
-              <p class="containers-5-detail">
-                I recently rented a car from Dorfrimps Car Rental and was
-                thoroughly impressed. The entire experience was seamless, from
-                booking to drop-off. The car was clean, well-maintained, and
-                drove like a dream. The staff was friendly and knowledgeable,
-                making the rental process a breeze. Highly recommend giving them
-                a try!
-              </p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt icon"></i>
-              </div>
-            </div>
-          </div>
-          <div class="containers-5-box">
-            <img src="images/df-cool.webp" alt="customer image icon" />
-            <div class="container-5-inner-detail">
-              <h6>Romel Chahcu</h6>
-              <p class="containers-5-detail">
-                I recently rented a car from Dorfrimps Car Rental and was
-                thoroughly impressed. The entire experience was seamless, from
-                booking to drop-off. The car was clean, well-maintained, and
-                drove like a dream. The staff was friendly and knowledgeable,
-                making the rental process a breeze. Highly recommend giving them
-                a try!
-              </p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <div class="containers-5-box">
-            <img src="images/df-cool.webp" alt="customer image icon" />
-            <div class="container-5-inner-detail">
-              <h6>Christiana Ayebo</h6>
-              <p class="containers-5-detail">Their service was marvelous.</p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <div class="containers-5-box">
-            <img src="images/df-cool.webp" alt="customer image icon" />
-            <div class="container-5-inner-detail">
-              <h6>Thomas Amokwandoh</h6>
-              <p class="containers-5-detail">
-                Drivers are on time and reliable. Despite a small
-                misunderstanding regarding full petrol tank cost, communication
-                was good and I recommend this company if needing a car rental
-                to/from Kumasi.
-              </p>
-              <div class="icon-background">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--end of sections-->
-    </main>
-    <footer>
-      <div class="footer-1">
-        <div class="image-footer">
-          <img src="images/logos/footer-logo.png" alt="logo" />
-        </div>
-        <div class="footer-div">
-          <h4>KUMASI OFFICE</h4>
-          <p>Mobile: +233 (0) 243-333-164 / +233-555-299-335</p>
-          <p>Dichemso near Airport roundabout</p>
-          <p>Email: info@dorfrimps.com</p>
-          <p>24/7 Dedicated Customer Support</p>
-        </div>
-      </div>
-      <div class="footer-2">
-        <div class="div1">
-          <div>Copyright © 2024</div>
-          <div>Dorfrimps Car Rentals</div>
-        </div>
-        <div>Designed by KelTech</div>
-      </div>
-      <!--<div class="scroll-top">&gt;</div>-->
-    </footer>
+				<div class="section-3-div">
+					<span>Pay in Cash / Mobile Money / Credit Card upon Delivery</span>
+				</div>
+			</section>
+			<!--section 4-->
+			<section id="section-4">
+				<div class="section-4-title">
+					<h3>Our Fleet</h3>
+					<!--<div class="section-4-liner"></div>-->
+				</div>
+				<div class="section-4-containers js-products-containers">
+					
+          <!--
+						<div class="sec-box">
+							<img src="images/cars/rav4.webp" alt="toyota rav4" />
+							<div class="sec-4-star">
+								<p>Toyota Rav4</p>
+								<div class="product-rating">
+									<img
+										src="images/ratings/rating-45.png"
+										alt="rating image"
+										class="product-rating"
+									/>
+								</div>
+							</div>
+							<div class="star-2">₵800 /day</div>
+							<span class="section-4-line"></span>
+							<p class="insure">
+								Insured, leather interior, Andriod Auto, Apple Carplay.
+							</p>
+							<button class="book-button">BOOK NOW</button>
+						</div>
+						<div class="sec-box">
+							<img src="images/cars/yaris.webp" alt="Toyota Yaris IA" />
+							<div class="sec-4-star">
+								<p>Toyota Yaris IA</p>
+								<div class="product-rating">
+									<img
+										src="images/ratings/rating-40.png"
+										alt="rating image"
+										class="product-rating"
+									/>
+								</div>
+								>
+							</div>
+							<div class="star-2">₵500 /day</div>
+							<span class="section-4-line"></span>
+							<p class="insure">Insured, advanced safety features, affordable.</p>
+							<button class="book-button">BOOK NOW</button>
+						</div>
+						<div class="sec-box">
+							<img src="images/cars/mitsubishi.webp" alt="Mitsubishi Outlander" />
+							<div class="sec-4-star">
+								<p>Mitsubishi Outlander</p>
+								<div class="product-rating">
+									<img
+										src="images/ratings/rating-40.png"
+										alt="rating image"
+										class="product-rating"
+									/>
+								</div>
+							</div>
+							<div class="star-2">₵800 /day</div>
+							<span class="section-4-line"></span>
+							<p class="insure">
+								Insured, leather interior, safety features, Andriod Auto.
+							</p>
+							<button class="book-button">BOOK NOW</button>
+						</div>
+						<div class="sec-box sec-box-2">
+							<img
+								src="images/cars/Toyota-Highlander.webp"
+								alt="Toyota Highlander"
+							/>
+							<div class="sec-4-star">
+								<p>Toyota Highlander</p>
+								<div class="product-rating">
+									<img
+										src="images/ratings/rating-50.png"
+										alt="rating image"
+										class="product-rating"
+									/>
+								</div>
+							</div>
+							<div class="star-2">₵1200 /day</div>
+							<span class="section-4-line"></span>
+							<p class="insure">
+								Insured, leather interior, Andriod Auto, Apple Carplay.
+							</p>
+							<button class="book-button">BOOK NOW</button>
+						</div>
+          -->
+				</div>
+			</section>
+			<!--section 5-->
+			<section id="section-5">
+				<div class="containers-5-div">Our Happy Clients!</div>
+				<div class="containers-5">
+					<div class="containers-5-box">
+						<img src="images/df-cool.webp" alt="customer image icon" />
+						<div class="container-5-inner-detail">
+							<h6>Sarah Obeng</h6>
+							<p class="containers-5-detail">
+								I recently rented a car from Dorfrimps Car Rental and was
+								thoroughly impressed. The entire experience was seamless, from
+								booking to drop-off. The car was clean, well-maintained, and
+								drove like a dream. The staff was friendly and knowledgeable,
+								making the rental process a breeze. Highly recommend giving them
+								a try!
+							</p>
+							<div class="icon-background">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="containers-5-box">
+						<img src="images/df-cool.webp" alt="customer image icon" />
+						<div class="container-5-inner-detail">
+							<h6>Romel Chahcu</h6>
+							<p class="containers-5-detail">
+								I recently rented a car from Dorfrimps Car Rental and was
+								thoroughly impressed. The entire experience was seamless, from
+								booking to drop-off. The car was clean, well-maintained, and
+								drove like a dream. The staff was friendly and knowledgeable,
+								making the rental process a breeze. Highly recommend giving them
+								a try!
+							</p>
+							<div class="icon-background">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<div class="containers-5-box">
+						<img src="images/df-cool.webp" alt="customer image icon" />
+						<div class="container-5-inner-detail">
+							<h6>Christiana Ayebo</h6>
+							<p class="containers-5-detail">Their service was marvelous.</p>
+							<div class="icon-background">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<div class="containers-5-box">
+						<img src="images/df-cool.webp" alt="customer image icon" />
+						<div class="container-5-inner-detail">
+							<h6>Thomas Amokwandoh</h6>
+							<p class="containers-5-detail">
+								Drivers are on time and reliable. Despite a small
+								misunderstanding regarding full petrol tank cost, communication
+								was good and I recommend this company if needing a car rental
+								to/from Kumasi.
+							</p>
+							<div class="icon-background">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end of sections-->
+		</main>
+		<footer>
+			<div class="footer-1">
+				<div class="image-footer">
+					<img src="images/logos/footer-logo.png" alt="logo" />
+				</div>
+				<div class="footer-div">
+					<h4>KUMASI OFFICE</h4>
+					<p>Mobile: +233 (0) 243-333-164 / +233-555-299-335</p>
+					<p>Dichemso near Airport roundabout</p>
+					<p>Email: info@dorfrimps.com</p>
+					<p>24/7 Dedicated Customer Support</p>
+				</div>
+			</div>
+			<div class="footer-2">
+				<div class="div1">
+					<div>Copyright © 2024</div>
+					<div>Dorfrimps Car Rentals</div>
+				</div>
+				<div>Designed by KelTech</div>
+			</div>
+			<!--<div class="scroll-top">&gt;</div>-->
+		</footer>
 
-    <script src="scripts/main.js"></script>
-  </body>
+		
+    <script type="module" src="scripts/index.js"></script>
+	</body>
 </html>
