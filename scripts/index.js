@@ -1,9 +1,9 @@
 import { products } from '../data/product.js';
 
 let productHTML = '';
-products.forEach((product, productId) => {
+products.forEach((product) => {
 	productHTML += `
-    <div class="sec-box hide-product-${product.id}">
+    <div class="sec-box product-id-${product.id}">
       <img
         src="${product.image}"
         alt=""
@@ -26,17 +26,17 @@ products.forEach((product, productId) => {
       <button class="book-button">BOOK NOW</button>
     </div>
   `;
-	productId = `${product.id}`;
-	console.log(productId);
 });
 
-const id = products.productId;
-
-const hideProduct = document.querySelector(`.hide-product-${id}`);
-if (hideProduct.id === '54e0eccd-8f36-462b-b68a-8182611d9add') {
-	hideProduct.classList.add('hide-item');
-}
-console.log(hideProduct);
-
 document.querySelector('.js-products-containers').innerHTML = productHTML;
-console.log(productHTML);
+
+/*hides the last product element*/
+products.forEach((product) => {
+  const productId = `${product.id}`;
+
+	const hideProduct = document.querySelector(`.product-id-${productId}`);
+	if (productId === '54e0eccd-8f36-462b-b68a-8182611d9add') {
+		hideProduct.classList.add('hide-item');
+	}
+  console.log(hideProduct)
+});
