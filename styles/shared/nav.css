@@ -22,7 +22,7 @@ ul {
 
 li {
 	list-style-type: none;
-	font-size: 18px;
+	font: 600 16px 'Quicksand';
 }
 a {
 	text-decoration: none;
