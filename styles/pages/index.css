@@ -242,6 +242,13 @@
 	}
 }
 
+/*hides the last product element*/
+@media (min-width: 1025px) {
+	.hide-item{
+		display: none;
+	}
+}
+
 .sec-box img,
 .sec-box-2 img {
 	border-radius: 15px;
